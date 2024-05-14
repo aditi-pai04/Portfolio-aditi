@@ -4,22 +4,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function App() {
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   return (
     <div className="home">
-      <div class="navigation">
+      <div class="navigation" id="home">
       <ul>
           <li><a href="#home"><span><b>Home</b></span></a></li>
           <p class="delimiter">|</p>
-          <li><a href="#about"><span><b>Projects</b></span></a></li>
+          <li><a href="#projects"><span><b>Projects</b></span></a></li>
           <p class="delimiter">|</p>
-          <li><a href="#work"><span><b>Experience</b></span></a></li>
+          <li><a href="#experience"><span><b>Experience</b></span></a></li>
           <p class="delimiter">|</p>
-          <li><a href="#contactus"><span><b>Contact Me</b></span></a></li>
+          <li><a href="#contact"><span><b>Contact Me</b></span></a></li>
         </ul></div>
       <div class="name-hello">
         <div class="myname">
           <h1>Hi! I'm Aditi N Pai!</h1>
-          <button><b>Contact me!</b></button>
+          <button onClick={() => scrollToSection('contact')}><b>Contact me!</b></button>
         </div>
       <div class="myimage"><img src={myimage} alt="Thats my image"/></div>
       
@@ -27,7 +33,7 @@ function App() {
       <div class="myabout">
         <p>I'm a student pursuing Computer Science and Engineering at R V College of Engineering, Bengaluru. A lover of art and software engineer by passion. Take a look at my projects below!!</p>
       </div>
-      <div class="myprojects">
+      <div class="myprojects" id="projects">
       <h3>Projects</h3> </div>
       <div class="projectnames">
         <h4>Owner registration system</h4>
@@ -38,7 +44,7 @@ function App() {
       </div>
       
       
-      <div class="contactme">
+      <div class="contactme" id="contact">
       <a class="contacticon" href="https://www.linkedin.com/in/aditi-n-pai-1b122b226/">
                 <FontAwesomeIcon style={{ fontSize: '30px', marginRight: '2vw' }} icon={faLinkedin} />
             </a>
@@ -56,5 +62,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

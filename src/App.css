@@ -36,6 +36,10 @@
     transform: rotate(360deg);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   display: inline;
   margin-right: 30px;
@@ -68,6 +72,7 @@ img {
   width: 16.5vw;
   height:30vh;
   margin-left: 5vw;
+  border: 10px solid rgb(239, 210, 246);
 }
 .name-hello {
   display: flex;
@@ -82,6 +87,7 @@ button {
   background-color: rgb(231, 180, 244);
   height: 7vh;
   width: 9vw;
+  font-size: 15px;
   border-radius: 10px;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
