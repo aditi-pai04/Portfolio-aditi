@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Portfolio-aditi/static/css/main.eea8a5e8.css",
+    "main.js": "/Portfolio-aditi/static/js/main.2c20b6e1.js",
+    "static/js/453.1407b060.chunk.js": "/Portfolio-aditi/static/js/453.1407b060.chunk.js",
+    "static/media/myimage.jpeg": "/Portfolio-aditi/static/media/myimage.79cddc328cdabe607ae4.jpeg",
+    "index.html": "/Portfolio-aditi/index.html",
+    "main.eea8a5e8.css.map": "/Portfolio-aditi/static/css/main.eea8a5e8.css.map",
+    "main.2c20b6e1.js.map": "/Portfolio-aditi/static/js/main.2c20b6e1.js.map",
+    "453.1407b060.chunk.js.map": "/Portfolio-aditi/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eea8a5e8.css",
+    "static/js/main.2c20b6e1.js"
+  ]
+}
